@@ -74,3 +74,14 @@ else{
 
 condition?console.log('True'):null;
 // isko next line ma break krna is not best practice 
+// let a;
+let age=10
+let b1=age>18?'Nic bangaya':'Nic Nahi bana';
+
+
+
+
+
+
+console.log(age)
+console.log(b1)
