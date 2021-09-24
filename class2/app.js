@@ -81,7 +81,29 @@
 //===============Sir Code Ends============
 
 
+let l1=[2,54,6,43]
+let l2=[21,4,63,3]
 
+// l1[2]=322
+let l3=[...l1,...l2];
+l1[2]=322
 
+console.log(l1)
+console.log(l2)
+console.log(l3)
 
+let obj1={
+    name:'wajahat',
+    age:12,
+    institute:'NED University'
+}
+
+let obj2={
+    ...obj1
+}
+console.log(obj1)
+console.log(obj2)
+obj2.institute='SAIMS'
+obj2['name']='ahmed'
+console.log(obj2)
 
