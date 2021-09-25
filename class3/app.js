@@ -105,7 +105,7 @@
 // }
 
 // a({name:'Ali'},{name:'Usama'},{name:'Waqas'},{name:'Basit'})
-let ul = document.getElementById('ul')
+// let ul = document.getElementById('ul')
 // let arr = ['ali','basit','usama','Zaid','Haris']
 
 
@@ -183,29 +183,29 @@ let std = [
 
 
 
-let arr=[1,3,5,3]
-function avg(a1,a2,a3){
-    let a=(a1+a3+a2)/3
-    return a;
-}
-let result = avg(...arr)
-console.log(result)
+// let arr=[1,3,5,3]
+// function avg(a1,a2,a3){
+//     let a=(a1+a3+a2)/3
+//     return a;
+// }
+// let result = avg(...arr)
+// console.log(result)
 
 // let arr3 = [...arr2,...arr2]
-let arr2=[3,5,3,6,9]
-let arr3=[...arr2,...arr2]
-console.log(arr3)
+// let arr2=[3,5,3,6,9]
+// let arr3=[...arr2,...arr2]
+// console.log(arr3)
 
 // Spread Operators
-let obj = {
-    name:'ali',
-    inst: 'saims',
-    favLang:'JavaScript'
-}
+// let obj = {
+//     name:'ali',
+//     inst: 'saims',
+//     favLang:'JavaScript'
+// }
 
-let obj2 = {...obj,favLang:'Python'}
-console.log(obj2)
-console.log(obj)
+// let obj2 = {...obj,favLang:'Python'}
+// console.log(obj2)
+// console.log(obj)
 
 // const obj = {
 //     name:'ali',
@@ -220,3 +220,164 @@ console.log(obj)
 // let favLang = obj.favLang
 // let {name,inst,favLang} = obj
 // console.log(name)
+
+// const obj={
+//     name:'ali',
+//     inst:'saims',
+//     favlang:'JS'
+// }
+// console.log(obj.name)
+// // let name=obj.name;
+// // let inst=obj.inst;
+// // let favlang=obj.favlang
+// let {name,inst,favlang}=obj;
+// console.log(inst)
+
+// Array Destructuring
+
+// let arr = [1,2,3,4]
+// // let arr2 = [2,3,4,5]
+// let [usa,arg,ys,a4] = arr
+
+// console.log(...arr)
+
+
+
+
+// let obj = {
+//     name:'Ali',
+//     age:18
+// }
+
+// let {name,age} = obj
+// name = 'Basit'
+// console.log(name,age)
+// console.log(obj)
+
+// let obj={
+//     name:'Wajahat',
+//     age:12
+// }
+
+// let {name,age}=obj
+// console.log(name,age)
+// name='ahmed'
+// console.log(name,age)
+// console.log(obj)
+
+
+// const a = 'abc'
+// b = 'xyz'
+// a = b//throw an error
+
+// console.log(a)
+
+// let a = 'another text'
+
+// if(true){
+//     let a = 'some text'
+//     console.log(a)
+// }
+// console.log(a)
+
+
+// let a =  ['a','b','c',[1,2,3]] 
+
+// let [,,,[subInd1,subInd2]] = a
+
+// console.log(subInd1)
+
+
+// let arr = [1,2,3]
+// let [a1,a2,a3] = arr
+
+// let obj = {
+//     a1,
+//     a2,
+//     a3
+// }
+
+// console.log(obj)
+
+// let arr=[3,5,67]
+// let [a,b,c]=arr
+// let name='ne'
+// let obj={
+//     a,b,c,name
+// }
+// console.log(obj)
+
+// Array Methods
+// map
+
+// function a(...rest){
+//     let arr = rest 
+//     arr.map(function(item,index){
+//         console.log(item.name + index)
+//     })
+// }
+
+// a({name:'Ali'},{name:'Usama'},{name:'Waqas'},{name:'Basit'})
+
+
+// function b(...rest){
+//     let arr=rest
+//     arr.map(function (item,index){
+//         console.log(item,index)
+//     })
+// }
+// b(1,2,4)
+
+// let c=[2,4,6]
+// console.log(...c)
+
+
+// let ul = document.getElementById('ul')
+let arr = ['ali','usama','usama','Zaid','Haris']
+
+
+// let arr = ['ali','basit','usama','Zaid','Haris']
+
+// arr.map(function(item){
+//     console.log(item)
+//     ul.innerHTML += `<li>${item}</li>` 
+// })
+
+// let ul1=document.getElementById('ul')
+// let arr1=["ali","laskdf","lsadkfjla","jsjgh","sldfe"]
+
+// arr1.map(function(item){
+//     console.log(item)
+
+
+//     ul1.innerHTML+=`<li>${item}</li>`
+// })
+
+// arr.forEach(function(x){
+//     console.log(x)
+// })
+
+
+let newArr = arr.filter(function(y){
+    return y == 'usama'
+})
+
+console.log(newArr)
+
+
+let arr1 = [1,2,3,1,2,]
+let x = prompt()
+console.log(arr1[+x])//Ask from sir
+console.log(arr1)
+
+
+
+// function searc(searchValue,searchby){   
+//     let arr = std.filter(function(x){
+//         return x[searchby] == searchValue
+//     })
+//     console.log(arr)
+// }
+
+// searc('1','class')
+
