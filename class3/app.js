@@ -111,40 +111,40 @@
 
 let std = [
     {
-        name:'Ali',
-        class:'1'
+        name: 'Ali',
+        class: '1'
     },
     {
-        name:'Usama',
-        class:'1'
+        name: 'Usama',
+        class: '1'
     },
     {
-        name:'Ali',
-        class:'6'
+        name: 'Ali',
+        class: '6'
     },
     {
-        name:'Waqas',
-        class:'4'
+        name: 'Waqas',
+        class: '4'
     },
     {
-        name:'Ali',
-        class:'1'
+        name: 'Ali',
+        class: '1'
     },
     {
-        name:'Usama',
-        class:'2'
+        name: 'Usama',
+        class: '2'
     },
     {
-        name:'Waqas',
-        class:'1'
+        name: 'Waqas',
+        class: '1'
     },
     {
-        name:'Usama',
-        class:'1'
+        name: 'Usama',
+        class: '1'
     },
     {
-        name:'Ali',
-        class:'4'
+        name: 'Ali',
+        class: '4'
     },
 ]
 
@@ -333,7 +333,7 @@ let std = [
 
 
 // let ul = document.getElementById('ul')
-let arr = ['ali','usama','usama','Zaid','Haris']
+let arr = ['ali', 'usama', 'usama', 'Zaid', 'Haris']
 
 
 // let arr = ['ali','basit','usama','Zaid','Haris']
@@ -353,22 +353,22 @@ let arr = ['ali','usama','usama','Zaid','Haris']
 //     ul1.innerHTML+=`<li>${item}</li>`
 // })
 
-// arr.forEach(function(x){
-//     console.log(x)
-// })
-
-
-let newArr = arr.filter(function(y){
-    return y == 'usama'
+arr.forEach(function (x) {
+    console.log(x)
 })
 
-console.log(newArr)
+
+// let newArr = arr.filter(function(y){
+//     return y == 'usama'
+// })
+
+// console.log(newArr)
 
 
-let arr1 = [1,2,3,1,2,]
-let x = prompt()
-console.log(arr1[+x])//Ask from sir
-console.log(arr1)
+// let arr1 = [1,2,3,1,2,]
+// let x = prompt()
+// console.log(arr1[+x])//Ask from sir
+// console.log(arr1)
 
 
 
@@ -381,3 +381,14 @@ console.log(arr1)
 
 // searc('1','class')
 
+
+function search1(searchValue, searchBy) {
+    let arr = std.filter(function (x) {
+        return x[searchBy] == searchValue;//array ke andr jis object ke 
+        // andr ye condition true horahi ha us object ko array ma 
+        // daldega or phir jo objects us condition ko follow krrhe hongy 
+        // unki array ajaegi is tarah pehli wali array filter hogi
+    })
+    console.log(arr)
+}
+search1(1, "class")
