@@ -1,4 +1,6 @@
 //ES6 Assignment # 1
+//Hosting link of the project
+// https://es6-assignment.web.app/
 
 //========Nested Array Destructing=======
 let arr = [2, 3, 5, [33, 55]]
