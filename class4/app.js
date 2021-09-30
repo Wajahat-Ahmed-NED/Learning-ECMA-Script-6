@@ -745,7 +745,20 @@ let obj = {
 
 
 
+let arr2=[1,2,4,5]
+let arr1=[];
+for(var i=0;i<arr2.length;i++){
+    if (arr2[i]==2){
+        
+        continue
 
+    }
+    arr1[i]=arr2[i]
+    
+}
+
+arr1.splice(1,1)
+console.log(arr1)
 
 
 
