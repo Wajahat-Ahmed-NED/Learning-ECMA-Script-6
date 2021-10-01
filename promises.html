@@ -1,10 +1,14 @@
 <script>
     // Promise
+    //firebase ke function se agr data bahar get krna ha tou use ==> promise
 
     var promise=new Promise(function(resolve,reject){
         var zinger="Jhoot bol rha ha nahi khilaya Khilaya "
-        if(zinger==="Khilaya ha"){
-            resolve("Ha khiladiya zinger")
+        if(zinger==="Jhoot bol rha ha nahi khilaya Khilaya "){
+            setTimeout(() => {
+                resolve("Ha khiladiya zinger")
+                
+            }, 5000);
 
         }
         else{
@@ -12,13 +16,38 @@
         }
     })
 
+console.log(promise)//pore variable ko dikhaega
+promise.then(function(data){
+    console.log("Resolve=>",data)
+})
 
-    promise.then(function(data){
-        console.log("Resolve=>",data)
-    })
+.catch(function(error){
+    console.log("Rejected=>",error)
+})
 
-    .catch(function(error){
-        console.log("Rejected=>",error)
-    })
 
+console.log(promise)//pore variable ko dikhaega
+//ye bhi pending dikharaha ha why??? Ask
+
+
+
+
+    // let promise=new Promise(function(resolve,reject){
+    //     firebase.database().ref("users").on("ChildAdded",function(data){
+    //         if(data.val()){
+    //             resolve(data.val())
+    //         }
+    //         else{
+    //             reject("Something went wrong")
+    //         }
+    //     })
+    // })
+
+    // promise.then(function(data){
+    //     console.log(data)
+    // })
+
+    // .catch(function(error){
+    //     console.log(error)
+    // })
 </script>
