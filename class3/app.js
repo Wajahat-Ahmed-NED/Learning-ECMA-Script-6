@@ -449,8 +449,13 @@ arr.forEach(function (x) {
 // console.log(arr1)
 
 
-let arr1=[3,4,65]
-let arr2=[...arr1]
-arr2.push(2,2,3)
-console.log(arr1)
-console.log(arr2)
+// let arr1=[3,4,65]
+// let arr2=[...arr1]
+// arr2.push(2,2,3)
+// console.log(arr1)
+// console.log(arr2)
+
+
+// let bool=false
+// let first=bool && 'Ghouse'//ye bhi ternary operator ha
+// console.log(first)
