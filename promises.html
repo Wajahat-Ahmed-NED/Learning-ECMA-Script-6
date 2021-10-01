@@ -1,0 +1,24 @@
+<script>
+    // Promise
+
+    var promise=new Promise(function(resolve,reject){
+        var zinger="Jhoot bol rha ha nahi khilaya Khilaya "
+        if(zinger==="Khilaya ha"){
+            resolve("Ha khiladiya zinger")
+
+        }
+        else{
+            reject("Nahi Khilaya")
+        }
+    })
+
+
+    promise.then(function(data){
+        console.log("Resolve=>",data)
+    })
+
+    .catch(function(error){
+        console.log("Rejected=>",error)
+    })
+
+</script>

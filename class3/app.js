@@ -459,3 +459,4 @@ arr.forEach(function (x) {
 // let bool=false
 // let first=bool && 'Ghouse'//ye bhi ternary operator ha
 // console.log(first)
+
