@@ -392,3 +392,13 @@ function search1(searchValue, searchBy) {
     console.log(arr)
 }
 search1(1, "class")
+
+
+// ==== array destructing practice ======
+let me=['python','js','c++','csharp']
+
+let [top1,top2,top3]=me
+console.log(`this is given ${top1},,,,${top2},,,,,,${top3}`)
+
+let [tops,,,topl]=me
+console.log(`This is given ${tops} and  ${topl}`)
