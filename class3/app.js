@@ -382,23 +382,75 @@ arr.forEach(function (x) {
 // searc('1','class')
 
 
-function search1(searchValue, searchBy) {
-    let arr = std.filter(function (x) {
-        return x[searchBy] == searchValue;//array ke andr jis object ke 
-        // andr ye condition true horahi ha us object ko array ma 
-        // daldega or phir jo objects us condition ko follow krrhe hongy 
-        // unki array ajaegi is tarah pehli wali array filter hogi
-    })
-    console.log(arr)
-}
-search1(1, "class")
+// function search1(searchValue, searchBy) {
+//     let arr = std.filter(function (x) {
+//         return x[searchBy] == searchValue;//array ke andr jis object ke 
+//         // andr ye condition true horahi ha us object ko array ma 
+//         // daldega or phir jo objects us condition ko follow krrhe hongy 
+//         // unki array ajaegi is tarah pehli wali array filter hogi
+//     })
+//     console.log(arr)
+// }
+// search1(1, "class")
 
 
-// ==== array destructing practice ======
-let me=['python','js','c++','csharp']
+// // ==== array destructing practice ======
+// let me=['python','js','c++','csharp']
 
-let [top1,top2,top3]=me
-console.log(`this is given ${top1},,,,${top2},,,,,,${top3}`)
+// let [top1,top2,top3]=me
+// console.log(`this is given ${top1},,,,${top2},,,,,,${top3}`)
 
-let [tops,,,topl]=me
-console.log(`This is given ${tops} and  ${topl}`)
+// let [tops,,,topl]=me
+// console.log(`This is given ${tops} and  ${topl}`)
+
+
+// let a=10;b=23;
+// [a,b]=[b,a]
+// console.log(a)
+// console.log(b)
+
+
+// const bioData={
+//     name:'wajahat',
+//     age:213,
+//     deg:'BE Software Engineering',
+//     hobb:{
+//         fgame:'hockey',
+//         sgame:'youtube videos'
+//     }
+// }
+
+// let {name:fname,age:myage,deg:mydeg,hobb}=bioData
+// let {fgame,sgame}=bioData.hobb
+// console.log(`Ye ma ho ${fname}`)
+// console.log(`Ye meri age ha ${myage}`)
+// console.log(`Ye meri degree ha ${mydeg}`)
+// console.log(`Ye meri degree ha ${hobb.sgame}`)
+// console.log(`Ye meri degree ha ${sgame}`)
+// console.log(`Ye meri degree ha ${fgame}`)
+
+
+// function sum(a,b,c){
+//     console.log(a+b+c)
+// }
+// waj=[1,2,3,4]
+// sum(...waj)
+
+// let ali=[23,5,4,3]
+
+// waj=[...waj,...ali]
+// console.log(waj)
+
+
+// let arr1=[1,2,3]
+// let arr2=arr1
+// arr2.push(5,8)
+// console.log(arr2)
+// console.log(arr1)
+
+
+let arr1=[3,4,65]
+let arr2=[...arr1]
+arr2.push(2,2,3)
+console.log(arr1)
+console.log(arr2)
