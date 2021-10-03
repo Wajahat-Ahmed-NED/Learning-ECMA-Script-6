@@ -88,3 +88,7 @@ let search="ham"
 if(name.toLowerCase().startsWith(search)){
     console.log(name)
 }
+
+if(name.toLowerCase().endsWith(search)){
+    console.log(name)
+}
