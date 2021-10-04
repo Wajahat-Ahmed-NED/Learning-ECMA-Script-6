@@ -92,3 +92,63 @@ if(name.toLowerCase().startsWith(search)){
 if(name.toLowerCase().endsWith(search)){
     console.log(name)
 }
+
+let arr1=[{name:'ghous'},{name:'basit'}]
+let multiply=arr1.map(a=>{
+    return a.name='umair'
+})
+console.log(multiply)
+
+
+// server database se communicate krne ke liye use hota ha
+// fetch method se hm server se connect krty ha in javascript
+// server ka bhi apna ip address hota ha jis ko phir domain name dety ha
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   .then(response => response.json())
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err))
+
+// fetch promise return krta ha phir hm promise ko resolve krwaty ha using resolve or reject
+// server pr 1 promise banaha jo data bhej rha ha agr hm ko wo mil jata ha to .then ma data ayega warna .catch chaly ga
+// free api for testing
+// we can short this code by async and await
+// server se baat krne ke liye api ka use krty ha api ip address ki tarah hoti ha
+
+async function getData(){
+    let data= await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    // jab tk fetch na hojaye wait kro or next line pr na jao this is asynchronous
+    console.log(data)
+}
+
+
+// function Student(name,email){
+//     // this is constructor function helps to create object
+    // es6 ma is ko banadiya class
+//     this.name=name;
+//     this.email=email
+// }
+
+// let student1=  new Student("wajahat","wajahat@gmail.com")
+// console.log(student1)
+
+class Student {
+    constructor(name,email){
+        this.name=name;
+        this.email=email
+    }
+}
+
+let student1= new Student('ali','ali@gmail.com')
+
+console.log(student1)
+
+class School extends Student{
+    constructor(name,email,school){
+        super(name,email)
+        this.school=school
+    }
+}
+
+let student2=new School('waji','waji@gmail.com','saims')
+console.log(student2)
