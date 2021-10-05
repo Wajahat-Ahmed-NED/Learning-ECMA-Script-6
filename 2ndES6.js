@@ -152,3 +152,11 @@ class School extends Student{
 
 let student2=new School('waji','waji@gmail.com','saims')
 console.log(student2)
+
+// rest operator
+
+function arrr(...rest){
+    // let arr1=rest
+    console.log(rest)
+}
+arrr(1,2,3,4)
