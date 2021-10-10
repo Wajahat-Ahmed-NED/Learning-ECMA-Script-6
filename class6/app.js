@@ -7,6 +7,7 @@ class Generate{
         console.log(name,age)
     }
 }
+
 var g1= new Generate('ali',23)
 console.log(g1)
 console.log(this)
